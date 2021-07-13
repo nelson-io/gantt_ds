@@ -26,7 +26,9 @@ for(i in 1:(nrow(gantt_df))){
                  showlegend = F,
                  hoverinfo = "text",
                  text = paste("Event: ", gantt_df$modules[i], "<br>",
-                              "Completion: ", gantt_df$completion[i]),
+                              "Completion: ", gantt_df$completion[i], "<br>",
+                              "Start date: ", gantt_df$start_date[i],"<br>",
+                              "End date: ", gantt_df$end_date[i],"<br>"),
                  evaluate = T
   )
 }

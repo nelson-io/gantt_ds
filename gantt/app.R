@@ -1,4 +1,4 @@
-source('script.R')
+source('script.R',encoding = "UTF-8")
 
 library(shiny)
 
